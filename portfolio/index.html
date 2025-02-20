@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thomas Scheltema - Portfolio</title>
+  <script>
+    fetch('../../html-project-scheltemat/components/navbar.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+  </script>
 </head>
 <body>
+  <div id="navbar"></div>
   Portfolio
-  <ul>
-    <li><a href="../">Home</a></li>
-    <li><a href="../about/">About</a></li>
-    <li><a href="../experience/">Experience</a></li>
-    <li><a href="../portfolio/">Portfolio</a></li>
-  </ul>
 </body>
 </html>
