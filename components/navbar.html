@@ -1,8 +1,44 @@
-<nav>
-  <ul>
-    <li><a href="../../html-project-scheltemat/">Home</a></li>
-    <li><a href="../../html-project-scheltemat/about/">About</a></li>
-    <li><a href="../../html-project-scheltemat/experience/">Experience</a></li>
-    <li><a href="../../html-project-scheltemat/portfolio/">Portfolio</a></li>
-  </ul>
-</nav>
+<head>
+  <style>
+    body {
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #14532D;
+      padding: 20px 10px 20px 10px ;
+    }
+    .nav-links {
+      display: flex;
+    }
+    .nav-item a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .nav-item a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Thomas Scheltema</div>
+
+    <div class="nav-links">
+      <div class="nav-item"><a href="../../html-project-scheltemat/">Home</a></div>
+      <div class="nav-item"><a href="../../html-project-scheltemat/about/">About</a></div>
+      <div class="nav-item"><a href="../../html-project-scheltemat/experience/">Experience</a></div>
+      <div class="nav-item"><a href="../../html-project-scheltemat/portfolio/">Portfolio</a></div>
+    </div>
+  </nav>
+</body>

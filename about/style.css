@@ -1,0 +1,11 @@
+#hero {
+  display: flex;
+}
+
+#hero img {
+  width: 40%;
+}
+
+.about-me {
+  padding: 2%;
+}
