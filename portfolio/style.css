@@ -1,5 +1,12 @@
-body {
+/* Basic Reset */
+body, h2, form, label, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
@@ -25,6 +32,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
+  margin-left: 5rem;
+  margin-bottom: 3rem;
 }
 
 .card {
@@ -41,11 +50,6 @@ body {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-.card-content {
-  position: relative;
-  height: 100%;
 }
 
 .card img {
@@ -80,6 +84,93 @@ body {
 
 .card:hover p {
   opacity: 1;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 120px; /* Set a minimum height */
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional Styling to Match Thomas Scheltema's Website */
+form {
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+input, textarea {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #999;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
 }
 
 @media (max-width: 768px) {
