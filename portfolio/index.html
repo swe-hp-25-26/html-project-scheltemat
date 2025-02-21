@@ -3,15 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Thomas Scheltema - Portfolio</title>
   <script>
-    fetch('../../html-project-scheltemat/components/navbar.html')
+    fetch('/components/navbar.html')
       .then(response => response.text())
       .then(data => document.getElementById('navbar').innerHTML = data);
   </script>
 </head>
 <body>
-  <div id="navbar"></div>
-  Portfolio
+  <section id="navbar"></section>
+  <main>
+    <section id="hero">
+      <div class="content-wrapper">
+        <h2>Here are a few projects I've worked on</h2>
+      </div>
+      <div class="card-wrapper">
+        <div class="card">
+          <h4>This is a card</h4>
+          <p>This is card text</p>
+        </div>
+        <div>
+          <h4>This is a card</h4>
+          <p>This is card text</p>
+        </div>
+        <div>
+          <h4>This is a card</h4>
+          <p>This is card text</p>
+        </div>
+        <div>
+          <h4>This is a card</h4>
+          <p>This is card text</p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

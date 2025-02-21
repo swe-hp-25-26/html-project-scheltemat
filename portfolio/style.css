@@ -22,7 +22,13 @@ body {
   gap: 2rem;
 }
 
-.about-text {
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* .about-text {
   flex: 1 1 40%;
   padding: 1rem;
 }
@@ -76,14 +82,14 @@ iframe {
   border-radius: 12px;
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 @media (max-width: 768px) {
   .content-wrapper {
     flex-direction: column;
     text-align: center;
   }
-
+/* 
   .about-text,
   .about-image {
     flex: 1 1 100%;
@@ -95,5 +101,5 @@ iframe {
 
   iframe {
     height: 250px;
-  }
+  } */
 }

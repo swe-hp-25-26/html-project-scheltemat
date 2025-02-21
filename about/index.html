@@ -6,26 +6,36 @@
   <link rel="stylesheet" href="style.css">
   <title>Thomas Scheltema - About</title>
   <script>
-    fetch('../../html-project-scheltemat/components/navbar.html')
+    fetch('/components/navbar.html')
       .then(response => response.text())
       .then(data => document.getElementById('navbar').innerHTML = data);
   </script>
 </head>
 <body>
   <section id="navbar"></section>
-  <section id="hero">
-    <!-- <img src="../assets/Thomas.png"/> -->
-    <div class="about-me">
-      <h2>About</h2>
-      <p>You thought I was just a programmer? Check this out</p>
-      <iframe 
-        src="https://www.youtube.com/embed/U5ZUG2FRaG4" 
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
-  
+  <main>
+    <section id="hero">
+      <div class="content-wrapper">
+        <div class="about-text">
+          <h2>A Little About Me</h2>
+          <p>
+            I am currently employed as a Master Data Software Engineer Apprentice for HP. I have been programming for about 3 years, starting by teaching myself and then attending a coding bootcamp. You can view a comprehensive summary of my experiences <a href="../experience/">here</a>. Before making this career pivot, I was a touring and session musician, and while I don't tour anymore, I am still available for session work! I have two dogs who I like to pretend are my real children, whom I love very much!
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="../assets/IMG_6720 2.JPEG" alt="Thomas Scheltema">
+        </div>
+      </div>
+      <div class="video-container">
+        <p>Watch this for funsies 🎵</p>
+        <iframe 
+          src="https://www.youtube.com/embed/U5ZUG2FRaG4" 
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

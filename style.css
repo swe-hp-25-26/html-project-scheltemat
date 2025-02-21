@@ -1,0 +1,59 @@
+img {
+  width: 100%;
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%; /* Adjust as needed */
+  height: auto;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a transparent background */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+.overlay-content h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.overlay-content p {
+  margin: 10px 0;
+}
+
+.overlay-content a {
+  text-decoration: none;
+  color: white;
+}
+
+.overlay-content a:hover {
+  background-color: #555;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.overlay-content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6347;
+  color: white;
+}
