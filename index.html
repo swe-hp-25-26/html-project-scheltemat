@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Thomas Scheltema</title>
+  <script>
+    fetch('/components/navbar.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+  </script>
+</head>
+<body>
+  <section id="navbar"></section>
+  <main>
+    <section>
+      <img src="assets/drummer.JPG"/>
+      <div class="overlay-content">
+        <h1>Hello, I'm Thomas</h1>
+        <h4>Programmer, musician, DIYer, and dog dad extrodinaire</h4>
+        <p><a href="/about">Learn More?</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Thomas Scheltema - Experience</title>
+  <script>
+    fetch('/components/navbar.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+  </script>
+</head>
+<body>
+  <div id="navbar"></div>
+  <div class="experiences-container">
+    <div class="experience-container">
+      <h2>Work Experience</h2>
+      <div class="experience-item">
+        <h3>Master Data Software Engineer Apprentice</h3>
+        <p class="date">January 2025 – Current</p>
+        <p class="description"></p>
+      </div>
+      <div class="experience-item">
+        <h3>Shift Supervisor</h3>
+        <p class="date">May 2024 – January 2025, &nbsp April 2014 – August 2019</p>
+        <p class="description">Led training programs to elevate team performance and accountability. Enforced safety protocols to ensure efficient equipment handling and compliance with corporate standards.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Software Engineer I</h3>
+        <p class="date">April 2023 – October 2023</p>
+        <p class="description">Developed custom software solutions for clients using React with Material UI and Ruby on Rails. Engineered and optimized database structures, ensuring peak performance and data integrity. Revolutionized large data imports and processing workflows through the implementation of efficient services and asynchronous jobs. Orchestrated client meetings to ensure clear communication of requirements and updates for project alignment.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Front End Developer Intern</h3>
+        <p class="date">January 2023 – April 2023</p>
+        <p class="description">Architected and implemented user-facing features using HTML, CSS, JavaScript, and React/React Native. Collaborated closely with back-end teams to seamlessly integrate RESTful APIs into web and mobile applications. Ensured optimal web accessibility and usability across diverse devices and browsers.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Medical Records Bookmarker</h3>
+        <p class="date">August 2019 – July 2022</p>
+        <p class="description">Ensured thorough review of records to optimize healthcare for U.S. military veterans. Maintained the highest standards of privacy and security while handling sensitive health information. Elevated to a specialty team for in-depth analysis of complex cases.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Session Drummer & Musician</h3>
+        <p class="date">Ongoing</p>
+        <p class="description">Performed and recorded with bands achieving millions of listens on Spotify. Versatile in live and studio settings, contributing to creative processes and professional productions.</p>
+      </div>
+    </div>
+    <div class="experience-container">
+      <h2>Education</h2>
+      <div class="experience-item">
+        <h3>Multiverse SWE Bootcamp</h3>
+        <p class="date">In progress</p>
+        <p class="description"></p>
+      </div>
+      <div class="experience-item">
+        <h3>Lone Star College</h3>
+        <p class="date">In progress</p>
+        <p class="description">A.S. in Computer Science</p>
+      </div>
+      <div class="experience-item">
+        <h3>DigitalCrafts</h3>
+        <p class="date">July 2022 - October 2022</p>
+        <p class="description">Software engineering training program covering full-stack development that included, but was not limited to, JavaScript, Python (including an emphasis on cutting-edge frameworks like React/Redux), and server-side technologies (including Node.js, Express, and PostgreSQL).</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

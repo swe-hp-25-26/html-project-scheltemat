@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Thomas Scheltema - Portfolio</title>
+  <script>
+    fetch('/components/navbar.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+  </script>
+</head>
+<body>
+  <section id="navbar"></section>
+  <main>
+    <div id="hero">
+      <section class="content-wrapper">
+        <h2>Here are a few projects I've worked on</h2>
+      </section>
+      <section class="card-wrapper">
+        <div class="card">
+          <h4>Houston Christmas Lights</h4>
+          <img src="../assets/portfolio/Christmas Lights.gif"/>
+          <p>Engineered a custom full-stack application using React and Ruby on Rails to automate time-consuming manual quoting processes for a Christmas lighting business, reducing quoting time by 50% and seamlessly integrating data into a custom CRM.</p>
+        </div>
+        <div class="card">
+          <h4>WUSH Inventory App</h4>
+          <img src="../assets/portfolio/WUSH.png"/>
+          <p>Revitalized client operations by spearheading the implementation of a streamlined inventory tracking system, delivery management, and event creation enhancement. Successfully integrated and tested new beta features, resulting in a substantial reduction in daily workload.</p>
+        </div>
+        <div class="card">
+          <h4>Prosper AI Product Page</h4>
+          <img src="../assets/portfolio/Prosper Product.gif"/>
+          <p>During my internship at Prosper AI, my primary focus was developing their upcoming mobile app. As a concluding task, I designed a product page for their public website, utilizing Next.JS, TypeScript, and TailwindCSS for the development.</p>
+        </div>
+        <div class="card">
+          <h4>The 1975 Mock Website</h4>
+          <img src="../assets/portfolio/the 1975.gif"/>
+          <p>I developed this static site using server-side rendering with EJS (Embedded JavaScript). Given that The 1975 is one of my favorite bands, I took inspiration from their website. It sparked an idea: "Why not recreate their site, adding my personal touch and flair to it?"</p>
+        </div>
+        <div class="card">
+          <h4>OnBeat: A Drummer's App</h4>
+          <img src="../assets/portfolio/OnBeat.gif"/>
+          <p>I developed this static site using server-side rendering with EJS (Embedded JavaScript). Given that The 1975 is one of my favorite bands, I took inspiration from their website. It sparked an idea: "Why not recreate their site, adding my personal touch and flair to it?"</p>
+        </div>
+        <div class="card">
+          <h4>Weather Widget</h4>
+          <img src="../assets/portfolio/weather.gif"/>
+          <p>This is a simple weather app to display weather data based on a search location. It renders HTML elements using DOM manipulation and pulls data from a weather API. Type in a city name and hit the enter button. The app works by either city or state name.</p>
+        </div>
+      </section>
+      <section class="content-wrapper">
+        <h2>Connect with me</h2>
+        <div>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
